@@ -1,0 +1,325 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.site-wrapper {
+    height: 100vh;
+    background-image: url("../image/background-picture.png");
+    background-size: cover;
+    font-family: "Fascinate Inline", system-ui;
+    position: relative;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+/* ----------- 320px ------------ */
+@media screen and (min-width: 20em) {
+    h1 {
+        font-size: 3rem;
+        padding: 3rem 0;
+    }
+}
+
+/* ----------- 375px ------------ */
+@media screen and (min-width: 23.43em) {
+    h1 {
+        padding: 7rem 1rem 2rem 1rem;
+    }
+}
+
+/* ----------- 425px ------------ */
+@media screen and (min-width: 26.56em) {
+    h1 {
+        padding: 5rem 1rem 3rem 1rem;
+    }
+}
+
+/* ----------- 768px ------------ */
+@media screen and (min-width: 48em) {
+    h1 {
+        font-size: 5rem;
+        padding: 5rem 0 3rem 0;
+    }
+}
+
+/* ----------- 1024px ------------ */
+@media screen and (min-width: 64em) {
+    h1 {
+        font-size: 4rem;
+        padding: 3rem 0;
+    }
+}
+
+/* ----------- 1440px ------------ */
+@media screen and (min-width: 90em) {
+    h1 {
+        font-size: 5rem;
+        padding: 4rem 0;
+    }
+}
+
+
+
+/* -----------------gameboard------------------- */
+
+.section-gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 35% 0 35%;
+}
+
+/* ----------- 320px ------------ */
+@media screen and (min-width: 20em) {
+    .section-gameboard {
+        margin: 0 17% 0 19%;
+    }
+}
+
+/* ----------- 375px ------------ */
+@media screen and (min-width: 23.43em) {
+    .section-gameboard {
+        margin: 0 18% 0 10%;
+    }
+}
+
+/* ----------- 425px ------------ */
+@media screen and (min-width: 26.56em) {
+    .section-gameboard {
+        margin: 0 10% 0 7%;
+    }
+}
+
+/* ----------- 768px ------------ */
+@media screen and (min-width: 48em) {
+    .section-gameboard {
+        margin: 0 24% 0 24%;
+    }
+}
+
+/* ----------- 1024px ------------ */
+@media screen and (min-width: 64em) {
+    .section-gameboard {
+        margin: 0 35% 0 35%;
+    }
+}
+
+/* ----------- 1280px ------------ */
+@media screen and (min-width: 80em) {
+    .section-gameboard {
+        margin: 0 35% 0 35%;
+    }
+}
+
+#spot1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#spot2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#spot3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#spot4 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#spot5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#spot6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#spot7 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#spot8 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#spot9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#spot1 {background-color: rgb(255, 255, 255);}
+#spot2 {background-color: rgb(0, 0, 0);}
+#spot3 {background-color: rgb(255, 255, 255);}
+#spot4 {background-color: rgb(0, 0, 0);}
+#spot5 {background-color: rgb(255, 255, 255);}
+#spot6 {background-color: rgb(0, 0, 0);}
+#spot7 {background-color: rgb(255, 255, 255);}
+#spot8 {background-color: rgb(0, 0, 0);}
+#spot9 {background-color: rgb(255, 255, 255);}
+
+
+#spot1, #spot2, #spot3, #spot4, #spot5,
+#spot6, #spot7, #spot8, #spot9 {
+    height: 20vh;
+    width: 20vh;
+    position: relative;
+}
+
+/* ----------- 320px ------------ */
+@media screen and (min-width: 20em) {
+    #spot1, #spot2, #spot3, #spot4, #spot5,
+    #spot6, #spot7, #spot8, #spot9 {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+/* ----------- 375px ------------ */
+@media screen and (min-width: 23.43em) {
+    #spot1, #spot2, #spot3, #spot4, #spot5,
+    #spot6, #spot7, #spot8, #spot9 {
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+}
+
+/* ----------- 425px ------------ */
+@media screen and (min-width: 26.56em) {
+    #spot1, #spot2, #spot3, #spot4, #spot5,
+    #spot6, #spot7, #spot8, #spot9 {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+/* ----------- 768px ------------ */
+@media screen and (min-width: 48em) {
+    #spot1, #spot2, #spot3, #spot4, #spot5,
+    #spot6, #spot7, #spot8, #spot9 {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+/* ----------- 1024px ------------ */
+@media screen and (min-width: 64em) {
+    #spot1, #spot2, #spot3, #spot4, #spot5,
+    #spot6, #spot7, #spot8, #spot9 {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+/* ----------- 1280px ------------ */
+@media screen and (min-width: 80em) {
+    #spot1, #spot2, #spot3, #spot4, #spot5,
+    #spot6, #spot7, #spot8, #spot9 {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+/* ----------- 1440px ------------ */
+@media screen and (min-width: 90em) {
+    #spot1, #spot2, #spot3, #spot4, #spot5,
+    #spot6, #spot7, #spot8, #spot9 {
+        height: 12rem;
+        width: 12rem;
+    }
+}
+
+.spot img {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    margin: 0 auto;
+    top: 10%;
+    left: 10%;
+}
+
+.section-gameboard img{
+    display: none;
+}
+
+/* --------------------winning-message------------------- */
+
+.winning-message {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0,0,0,.8);
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    display: none;
+}
+
+/* ----------- 600px ------------ */
+@media screen and (max-width: 37.5em) {
+    .winning-message {
+        font-size: 2.5rem;
+        padding: 5rem 0 0 0;
+    }
+}
+
+.winning-message button {
+    font-size: 2rem;
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.winning-message.show {
+    display: flex;
+}
+
+/* --------------------footer------------------- */
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(41, 31, 19);
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ----------- 600px ------------ */
+@media screen and (max-width: 37.5em) {
+    footer {
+        font-size: .8rem;
+        padding: .5rem 0;
+    }
+}
